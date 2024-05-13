@@ -2,3 +2,73 @@
 \label{sec:Auswertung}
 
 \input{fehlerrechnung.tex}
+
+
+\subsection{Messung des Magnetfeldes}
+\label{sec:AuswB}
+Die aufgezeichneten Messwerte der magnetischen Flussdichte sind in \autoref{tab:BFeld} aufgetragen.
+Es wurde die Flussdichte $B$ in Abhängigkeit der Auslenkung $r$ notiert.
+\begin{table}
+    \centering
+    \caption{1}
+    \begin{tabular}{c c  }
+        \toprule
+        Auslenkung $r \mathbin{/}\unit{\milli \meter}$& $B\mathbin{/}\unit{\milli \tesla}$\\
+        \midrule
+        86	&102\\
+        88&	219\\
+        90&	325\\
+        92&	375\\
+        94&	400\\
+        96&	413\\
+        98&	418\\
+        100&417\\
+        102&410\\
+        104&396\\
+        106&365\\
+        108&304\\
+        110&204\\
+        112&105\\
+        \bottomrule
+    \end{tabular}
+    \label{tab:BFeld}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{build/BFeld.pdf}
+    \caption{Magnetische Flussdichte in Abhängigkeit der Auslenkung.}
+    \label{fig:BFeld}
+\end{figure}
+Das Maximum der Messwerte entspricht hierbei der Mitte der Spule, also genau der Ort an welchem später die Halbleiter-Proben platziert werden.
+Der eingezeichnete Maximalwert beträgt $418\, \unit{\milli \tesla}$.
+
+\subsection{Faraday-Effekt}
+
+
+\begin{table}
+    \centering
+    \caption{1}
+    \begin{tabular}{c c c c c c c }
+        \toprule
+        & \multicolumn{2}{c}{n-GaAs (1)} & \multicolumn{2}{c}{n-GaAs (2)} & \multicolumn{2}{c}{GaAs} \\
+		\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule{6-7}
+		{$\lambda \mathbin{/} \unit{\micro\meter}$} &
+        {$\theta_1 \mathbin{/} \unit{\degree}$} & {$\theta_2 \mathbin{/} \unit{\degree}$} &
+        {$\theta_1 \mathbin{/} \unit{\degree}$} & {$\theta_2 \mathbin{/} \unit{\degree}$} &
+        {$\theta_1 \mathbin{/} \unit{\degree}$} & {$\theta_2 \mathbin{/} \unit{\degree}$} \\
+		\midrule
+        1.060&  &   &   &   &   &   \\
+        1.290&  &   &   &   &   &   \\
+        1.450&  &   &   &   &   &   \\
+        1.720&  &   &   &   &   &   \\
+        1.960&  &   &   &   &   &   \\
+        2.156&  &   &   &   &   &   \\
+        2.340&  &   &   &   &   &   \\
+        2.510&  &   &   &   &   &   \\
+        2.650&  &   &   &   &   &   \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:BFeld}
+\end{table}
+
