@@ -1,6 +1,6 @@
 all: build/v46.pdf
 
-build/v46.pdf: v46.tex aufbau.tex auswertung.tex diskussion.tex durchfuehrung.tex fehlerrechnung.tex lit.bib theorie.tex ziel.tex | build
+build/v46.pdf: build/BFeld.pdf v46.tex aufbau.tex auswertung.tex diskussion.tex durchfuehrung.tex fehlerrechnung.tex lit.bib theorie.tex ziel.tex | build
 	lualatex  --output-directory=build v46.tex
 	lualatex  --output-directory=build v46.tex
 	biber build/v46.bcf
