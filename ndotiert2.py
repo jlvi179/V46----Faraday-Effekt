@@ -17,7 +17,7 @@ from uncertainties.unumpy import (nominal_values as noms,   # Wert:             
 theta11,theta12, theta1, theta21, theta22, theta2, diff,lamb = np.genfromtxt('Messungen2.txt', unpack=True, skip_header=2)
 
 plt.plot(lamb**2, diff, 'xr', markersize=6 , label = 'Messdaten', alpha=0.5)
-plt.xlabel(r'$\lambda^2 \, / \, \mathrm{\mu m^2}$')
+plt.xlabel(r'$\lambda^2 \, / \, \mathrm{10^{-12} m^2}$')
 plt.ylabel(r'$\theta_{norm}\, / \, \mathrm{\frac{rad}{m}}$')
 plt.legend(loc="best")                  # legend position
 plt.grid(True)                          # grid style
@@ -54,7 +54,7 @@ plt.plot(lamb2**2, diff2, 'xk', markersize=6 , label = 'Messdaten', alpha=0.5)
 plt.plot(lamb2a**2, diff2a, '+r', markersize=6 , label = 'ausgeschlossene Messdaten', alpha=0.5)
 plt.plot(xx, g(xx,*para), 'b', markersize=6 , label = 'Ausgleichsgerade', alpha=0.5)
 
-plt.xlabel(r'$\lambda^2 \, / \, \mathrm{\mu m^2}$')
+plt.xlabel(r'$\lambda^2 \, / \, \mathrm{10^{-12} m^2}$')
 plt.ylabel(r'$\theta_{norm}\, / \, \mathrm{\frac{rad}{m}}$')
 plt.legend(loc="best")                  # legend position
 plt.grid(True)                          # grid style
