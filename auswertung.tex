@@ -10,7 +10,7 @@ Die aufgezeichneten Messwerte der magnetischen Flussdichte sind in \autoref{tab:
 Es wurde die Flussdichte $B$ in Abhängigkeit der Auslenkung $r$ notiert.
 \begin{table}
     \centering
-    \caption{1}
+    \caption{Messwerte der magnetischen Feldstärke in Abhängigkeit vom Abstand.}
     \begin{tabular}{c c  }
         \toprule
         Auslenkung $r \mathbin{/}\unit{\milli \meter}$& $B\mathbin{/}\unit{\milli \tesla}$\\
@@ -44,11 +44,14 @@ Das Maximum der Messwerte entspricht hierbei der Mitte der Spule, also genau der
 Der eingezeichnete Maximalwert beträgt $418\, \unit{\milli \tesla}$.
 
 \subsection{Faraday-Effekt}
-
-
+In \autoref{tab:winkel} werden die gemessenen Winkel für die drei Proben in Abhängigkeit von der Wellenlänge dargestellt. Dabei handelt es sich bei der 
+ersten Probe um n-dotiertes GaAs  mit $N = 1.2 \cdot 10^{18}\,\unit{\centi\meter}^3$ und $d= 1.36\,\unit{\milli\meter}$. Die zweite Probe ist 
+n-dotiertes GaAs mit $N = 2.8 \cdot 10^{18}\,\unit{\centi\meter}^3$ und $d= 1.296\,\unit{\milli\meter}$. Bei der letzten Probe handelt es sich um 
+hochreines GaAs mit einer Dicke von $d= 5.11\,\unit{\milli\meter}$. \\
+\\
 \begin{table}
     \centering
-    \caption{1}
+    \caption{Gemessene Winkel in Abhängigkeit von der Wellenlänge.}
     \begin{tabular}{c c c c c c c }
         \toprule
         & \multicolumn{2}{c}{n-GaAs (1)} & \multicolumn{2}{c}{n-GaAs (2)} & \multicolumn{2}{c}{GaAs} \\
@@ -69,26 +72,34 @@ Der eingezeichnete Maximalwert beträgt $418\, \unit{\milli \tesla}$.
         2.650& 67.27 &  74.90 &  64.18 &  82.80 &  68.18 &  72.38 \\
         \bottomrule
     \end{tabular}
-    \label{tab:BFeld}
+    \label{tab:winkel}
 \end{table}
-
+Im folgenden soll der auf die Einheitslänge normierte Rotationswinkel in Abhängigkeit von der Wellenlänge graphisch aufgetragen werden. Dazu 
+wird zuerst die Differenz der beiden Polungen gebildet und im Anschluss auf die zweifache Dicke der Probe normiert. 
+Die Berechnung der Differenz der normierten Drehwinkel erfolgt mittels
+\begin{equation*}
+    \Delta \theta = \lvert \frac{1}{2d}(\theta_1 - \theta_2) \rvert \,\, .
+\end{equation*}
+Die graphische Darstellung für die einzelnen Proben findet sich in \autoref{fig:ndotiert1}, \autoref{fig:ndotiert2} und \autoref{fig:hochrein}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{build/ndotiert1.pdf}
-    \caption{.}
+    \caption{Differenz der normierten Drehwinkel für Probe 1.}
     \label{fig:ndotiert1}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{build/ndotiert2.pdf}
-    \caption{.}
+    \caption{Differenz der normierten Drehwinkel für Probe 2.}
     \label{fig:ndotiert2}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{build/hochrein.pdf}
-    \caption{.}
+    \caption{Differenz der normierten Drehwinkel für hochreines GaAs.}
     \label{fig:hochrein}
 \end{figure}
+
+\subsection{effektive Masse}
