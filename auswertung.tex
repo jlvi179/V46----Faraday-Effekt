@@ -103,9 +103,9 @@ Die graphische Darstellung für die einzelnen Proben findet sich in \autoref{fig
 \end{figure}
 
 \subsection{Effektive Masse}
-Zur Bestimmung der effektiven Masse wird eine Ausgleichsgerade gemäß
+Zur Bestimmung der effektiven Masse wird eine Ausgleichsgerade gemäß \autoref{eqn:gl12}
 \begin{equation*}
-    \frac{\theta}{L}=a\lambda ^2 +b
+    \frac{\theta}{d}=a\lambda ^2 +b
 \end{equation*} 
 an die Messdaten der n-dotierten Proben gelegt. Diese sind dargestellt in \autoref{fig:ausgleich1} und \autoref{fig:ausgleich2}.
 \begin{figure}[H]
@@ -120,14 +120,14 @@ an die Messdaten der n-dotierten Proben gelegt. Diese sind dargestellt in \autor
     \caption{Ausgleichsgerade zur Bestimmung der effektiven Masse für Probe 2.}
     \label{fig:ausgleich2}
 \end{figure}
-Der y-Achsenabschnitt $b$ sollte in diesem Fall den Wert 0 betragen. Die Steigungen der Ausgleichsgeraden ergeben sich zu 
+Der y-Achsenabschnitt $b$ sollte idealen Fall den Wert 0 tragen. Aufgrund von systematischen Ungenauigkeiten (wie zum Beispiel Rauschen) wird der Parameter hier dennoch als Korrekturfaktor benötigt. Die Steigungen der Ausgleichsgeraden ergeben sich zu 
 \begin{align*}
-    a_1 &= (1.27 \pm 0.22) \,\symup{\frac{rad}{m^3}} \; ,\\
-    a_2 &= (7.3 \pm 0.7) \,\symup{\frac{rad}{m^3}}\; .
+    a_1 &= (1.27 \pm 0.22)10^12 \,\symup{\frac{rad}{m^3}} \; ,\\
+    a_2 &= (7.3 \pm 0.7)10^12 \,\symup{\frac{rad}{m^3}}\; .
 \end{align*}
 Der Parameter $a$ lässt sich nach der gesuchten Größe $m^*$ umformen. Für die effektive Masse folgt so
 \begin{equation}
-    m^*=\left(\frac{Ne_0^3 B}{8\pi \epsilon_0 c^3 na}\right)^{1/2}\; .
+    m^*=\left(\frac{Ne_0^3 B}{8\pi^2 \epsilon_0 c^3 na}\right)^{1/2}\; .
     \label{eqn:effMasse}
 \end{equation}
 Die Größen $e_0$ , $m_0$, $\epsilon_0$ und $c$ sind in Form von Naturkonstanten festgelegt, wohingegen der Brechungsindex $n=3.397$\cite{GaAs} materialabhängig ist.
@@ -141,6 +141,11 @@ Für die Größen folgen die Werte
 $B$ ist die maximale magnetische Feldstärke $B=418\, \unit{\milli \tesla}$
 Mit \autoref{eqn:effMasse} ergeben sich die effektiven Massen $m^*$ der Elektronen in GaAs zu 
 \begin{align*}
-    m^*_1 &= (2.82 \pm 0.24)\cdot 10^{-28}\,\unit{\kilogram}\; ,\\
-    m^*_2&= (1.80 \pm 0.09)\cdot 10^{-28}\,\unit{\kilogram} \; .
+    m^*_1 &= (1.59 \pm 0.14)\cdot 10^{-31}\,\unit{\kilogram}\; ,\\
+    m^*_2&= (1.01 \pm 0.05)\cdot 10^{-31}\,\unit{\kilogram} \; .
+\end{align*}
+Drückt man dies in Einheiten der freien Elektronenmasse aus, erhält man
+\begin{align*}
+    m^*_1&= (0.175\pm 0.015) m_0\\
+    m^*_2&= (0.111\pm 0.005) m_0
 \end{align*}

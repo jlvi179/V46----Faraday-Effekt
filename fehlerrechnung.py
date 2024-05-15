@@ -19,10 +19,10 @@ N1 = 1.2*10**(18)
 N2 = 2.8*10**(18)
 
 def m(a,N):
-    return ((N*e**3*B)/(8*np.pi*eps*c**3*n*a))**(1/2)
+    return (((N*e**3*B)/(8*np.pi**2*eps*c**3*n*a))**(1/2))
 
-ua1 = ufloat(1.27, 0.22)
-ua2 = ufloat(7.3, 0.7)
+ua1 = ufloat(1.27, 0.22)*10**(6)
+ua2 = ufloat(7.3, 0.7)*10**(6)
 
 print(m(ua1, N1))
 print(m(ua2, N2))
@@ -34,3 +34,8 @@ def m0(em):
 
 print(m0(m(ua1,N1)))
 print(m0(m(ua2,N2)))
+
+mtheo=0.067
+print('abweichung 1', (m0(m(ua1,N1))-mtheo)/mtheo)
+
+print('abweichung 2', (m0(m(ua2,N2))-mtheo)/mtheo)
