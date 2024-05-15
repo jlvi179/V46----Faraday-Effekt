@@ -103,20 +103,44 @@ Die graphische Darstellung für die einzelnen Proben findet sich in \autoref{fig
 \end{figure}
 
 \subsection{Effektive Masse}
-
 Zur Bestimmung der effektiven Masse wird eine Ausgleichsgerade gemäß
 \begin{equation*}
     \frac{\theta}{L}=a\lambda ^2 +b
 \end{equation*} 
-an die Messdaten gelegt.
+an die Messdaten der n-dotierten Proben gelegt. Diese sind dargestellt in \autoref{fig:ausgleich1} und \autoref{fig:ausgleich2}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{build/ndotiert1gerade.pdf}
+    \caption{Ausgleichsgerade zur Bestimmung der effektiven Masse für Probe 1.}
+    \label{fig:ausgleich1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{build/ndotiert2gerade.pdf}
+    \caption{Ausgleichsgerade zur Bestimmung der effektiven Masse für Probe 2.}
+    \label{fig:ausgleich2}
+\end{figure}
+Der y-Achsenabschnitt $b$ sollte in diesem Fall den Wert 0 betragen. Die Steigungen der Ausgleichsgeraden ergeben sich zu 
+\begin{align*}
+    a_1 &= (1.27 \pm 0.22) \,\symup{\frac{rad}{m^3}} \; ,\\
+    a_2 &= (7.3 \pm 0.7) \,\symup{\frac{rad}{m^3}}\; .
+\end{align*}
 Der Parameter $a$ lässt sich nach der gesuchten Größe $m^*$ umformen. Für die effektive Masse folgt so
-\begin{equation*}
+\begin{equation}
     m^*=\left(\frac{Ne_0^3 B}{8\pi \epsilon_0 c^3 na}\right)^{1/2}\; .
-\end{equation*}
-Die Größen $e_0$ , $m_0$ und $c$ sind in Form von Naturkonstanten festgelegt, wohingegen der Brechungsindex $n=3.397$\cite{GaAs} materialabhängig ist.
+    \label{eqn:effMasse}
+\end{equation}
+Die Größen $e_0$ , $m_0$, $\epsilon_0$ und $c$ sind in Form von Naturkonstanten festgelegt, wohingegen der Brechungsindex $n=3.397$\cite{GaAs} materialabhängig ist.
 Für die Größen folgen die Werte 
 \begin{align*}
-    e_0&= 1.602 \cdot 10^-19 \, \unit{\coulomb}\; ,\\
+    e_0&= 1.602 \cdot 10^{-19} \, \unit{\coulomb}\; ,\\
     m_0&= 9.109 \cdot 10^{-31}\, \unit{\kilo \gram}\; ,\\
+    \epsilon_0 &= 8.854 \cdot 10^{-12}\,\symup{\frac{F}{m}} \;,\\
     c&= 2.998 \cdot 10^8\, \unit{\frac{\meter}{\second}}\; .
+\end{align*}
+$B$ ist die maximale magnetische Feldstärke $B=418\, \unit{\milli \tesla}$
+Mit \autoref{eqn:effMasse} ergeben sich die effektiven Massen $m^*$ der Elektronen in GaAs zu 
+\begin{align*}
+    m^*_1 &= (2.82 \pm 0.24)\cdot 10^{-28}\,\unit{\kilogram}\; ,\\
+    m^*_2&= (1.80 \pm 0.09)\cdot 10^{-28}\,\unit{\kilogram} \; .
 \end{align*}

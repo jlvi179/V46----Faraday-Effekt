@@ -10,10 +10,27 @@ from uncertainties.unumpy import uarray                     # Array von Fehler: 
 from uncertainties.unumpy import (nominal_values as noms,   # Wert:             noms(fehlerwert) = x
                                   std_devs as stds)  
 
-def Blang(I,l):
-    return 12.566*10**(-7)*1*3400*I/l
+e = 1.602*10**(-19)
+eps = 8.854*10**(-12)
+c = 2.998*10**8
+B = 418*10**(-3)
+n = 3.397
+N1 = 1.2*10**(18)
+N2 = 2.8*10**(18)
 
-uI = ufloat(0.5, 0.1)
-ul = ufloat(0.102, 0.005)
+def m(a,N):
+    return ((N*e**3*B)/(8*np.pi*eps*c**3*n*a))**(1/2)
 
-print(Blang(uI, ul))
+ua1 = ufloat(1.27, 0.22)
+ua2 = ufloat(7.3, 0.7)
+
+print(m(ua1, N1))
+print(m(ua2, N2))
+
+me = 9.109*10**(-31)
+
+def m0(em):
+    return em/me
+
+print(m0(m(ua1,N1)))
+print(m0(m(ua2,N2)))
